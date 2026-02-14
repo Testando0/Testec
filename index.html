@@ -478,13 +478,13 @@
             <!-- Input Area -->
             <div class="input-area">
                 <div class="input-wrapper">
-                    <input 
-                        type="text" 
+                    <textarea 
                         class="input-field" 
                         id="messageInput" 
                         placeholder="Ask anything or describe an image..."
                         onkeypress="handleKeyPress(event)"
-                    >
+                        style="resize: none; min-height: 44px; max-height: 120px; font-family: inherit;"
+                    ></textarea>
                     <button class="send-btn" onclick="sendMessage()" id="sendBtn">Send</button>
                 </div>
             </div>
